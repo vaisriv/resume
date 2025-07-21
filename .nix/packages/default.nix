@@ -1,0 +1,5 @@
+{
+    perSystem,
+    ...
+}:
+perSystem.self.resume

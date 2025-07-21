@@ -25,6 +25,12 @@
             url = "github:vaisriv/nvf";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        # typst
+        typix = {
+            url = "github:loqusion/typix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = inputs:

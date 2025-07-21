@@ -4,11 +4,12 @@
     ...
 }:
 perSystem.devshell.mkShell {
-    name = "resume devshell";
-    motd = ''
-        📝 {51}resume{reset} devshell
-        $(type -p menu &>/dev/null && menu)
-    '';
+    motd =
+        # bash
+        ''
+            📝 {51}resume{reset} devshell
+            $(type -p menu &>/dev/null && menu)
+        '';
 
     commands = [
         {
@@ -19,7 +20,7 @@ perSystem.devshell.mkShell {
         {
             name = "tinymist";
             package = pkgs.tinymist;
-            help = "Typst LSP";
+            help = "typst lsp";
         }
     ];
 }
