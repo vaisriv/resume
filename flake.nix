@@ -20,12 +20,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        # neovim config
-        nvf-config = {
-            url = "github:vaisriv/nvf";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         # typst
         typix = {
             url = "github:loqusion/typix";
