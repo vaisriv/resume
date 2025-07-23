@@ -1,24 +1,24 @@
 #import "@preview/clickworthy-resume:1.0.0": *
 
 // Personal Information
-#let name = "Jordan Michaels"
-#let email = "jordan.michaels@example.com"
-#let github = "github.com/jordan-devhub"
-#let linkedin = "linkedin.com/in/jordan-michaels"
+#let name = "Vai Srivastava"
+#let email = "vai.sriv@icloud.com"
+#let github = "github.com/vaisriv"
+#let linkedin = "linkedin.com/in/vaisriv"
 #let contacts = (
     [#link("mailto:" + email)[#email]],
     [#link("https://" + github)[#github]],
     [#link("https://" + linkedin)[#linkedin]],
+    [#link("https://www.openstreetmap.org/relation/133393")[College Park, MD 20740]],
 )
-#let location = ""
 
 // Professional Summary
-#let summary = ""
+#let summary = "Highly motivated Aerospace undergraduate researcher at UMD, specializing in high-performance computing and innovative propulsion systems. Proven expertise in MATLAB, Python, R, C++ to optimize simulations and designs, demonstrating strong analytical skills, and excellent communication."
 
 // Resume configuration
 #let theme = rgb("#26428b")
 #let font = "New Computer Modern"
-#let fontSize = 11pt
+#let fontSize = 10pt
 #let lang = "en"
 #let margin = (
     top: 1cm,
@@ -30,7 +30,6 @@
 // Resume Header and configuration
 #show: resume.with(
     author: name,
-    location: location,
     contacts: contacts,
     summary: summary,
     theme-color: theme,
@@ -43,181 +42,136 @@
 // Education
 = Education
 #edu(
-    institution: "Carnegie Mellon University",
-    date: "Sep 2023 - Jun 2025",
-    location: "Pittsburgh, PA",
+    institution: "University of Maryland",
+    date: "May 2026 (Expected)",
+    location: "College Park, MD",
     degrees: (
-        ("M.S.", "Computer Systems"),
+        ("B.S.", "Aerospace Engineering - Space Track"),
     ),
-    gpa: "3.81",
-    extra: "",
-)
-
-#edu(
-    institution: "University of Texas at Austin",
-    date: "Aug 2018 - May 2023",
-    location: "Austin, TX",
-    degrees: (
-        ("B.S.", "Software Engineering"),
-        ("Minor", "Cognitive Science"),
-    ),
-    gpa: "3.97",
-    extra: "",
+    // gpa: "3.29",
+    extra: "Coursework: Fluid/Gas/Thermodynamics, Control Systems, Systems Reliability",
 )
 
 // Experience
 = Experience
 #exp(
-    title: "Platform Engineering Intern",
-    organization: "Bitstream Networks",
-    date: "May 2024 - Aug 2024",
-    location: "Denver, CO",
+    title: "Undergraduate Researcher",
+    organization: "UMD Department of Aerospace: Space Power and Propulsion Lab",
+    date: "Jan. 2025 - May 2025",
+    location: "College Park, MD",
     details: [
-        - Designed and deployed a real-time telemetry pipeline for edge network routers using Go and Protobuf.
-        - Developed high-throughput sync agents across distributed nodes using gRPC and Redis streams.
-        - Created Verilog modules to validate MAC-level packet timings on custom FPGA NICs for load testing.
+        - Designing and building a prototype magnetic nozzle for UMD's direct-drive fusion and space propulsion research
+        - Iterating on current helium-based physics model to optimize magnetic nozzle efficiency
+        - Planning a testing suite to measure viability of magnetic nozzle prototype in space exploration applications
     ],
 )
-
 #exp(
-    title: "Firmware Intern",
-    organization: "Atlas Devices",
-    date: "Jun 2023 - Sep 2023",
-    location: "Boston, MA",
+    title: "AEROS Scholar & Undergraduate Researcher",
+    organization: "UMD Department of Aerospace: Computational Fluid Dynamics Lab",
+    date: "Jun. 2024 - Dec. 2024",
+    location: "College Park, MD",
     details: [
-        - Implemented drivers and diagnostics for a custom USB audio subsystem on a Cortex-M7 platform.
-        - Built Python automation scripts for multidevice firmware upgrade pipelines and JTAG verification.
-        - Validated board-level signal integrity with oscilloscope captures and SPI timing analyzers.
+        - Optimized Computational Fluid Dynamics Simulation software to better leverage GPU technology in UMD's High Performance Computing Clusters
+        - Collaborated with my research group on Computational Fluid Dynamics Simulations utilizing various flow models to improve aerodynamic geometries
+        - Documented codebase to streamline onboarding of future researchers
     ],
 )
-
 #exp(
-    title: "Undergraduate Lab Assistant",
-    organization: "University of Texas at Austin",
-    date: "Aug 2021 - Dec 2022",
-    location: "Austin, TX",
+    title: "Team KIWI Project Co-Lead",
+    organization: "UMD Nearspace: Balloon Payload Program",
+    date: "Sep. 2022 - Jan. 2024",
+    location: "College Park, MD",
     details: [
-        - Assisted with instructional support for algorithms, data structures, and discrete math courses.
-        - Led peer tutoring sessions and created practice exams for midterm review.
+        - Led the design for a proof-of-concept for an energy recovery system for near-space ascension scientific payloads
+        - Contributed to various launch processes including balloon tracking, payload tie-on, and management
+        - Participated in multiple launch operations for data collection and experimentation
     ],
-    hide: true,
+)
+#exp(
+    title: "Undergraduate Researcher",
+    organization: "UMD Department of Agricultural & Resource Economics - " + link("https://www.fire.umd.edu/sa")[FIRE: Sustainability Analytics],
+    date: "Jun. 2024 - Dec. 2024",
+    location: "College Park, MD",
+    details: [
+        - Conducted research as part of a multi-year project focusing on electric grids and carbon emissions
+        - Analyzed and modeled multiple US Energy Information Administration and US Environmental Protection Agency datasets using R and Python
+    ],
 )
 
-// Projects
-= Projects
+// Projects and Publications (Pubs can be included using a .bib file)
+= Projects/Publications
+#pub(
+    authors: (
+        "William Ratnavale",
+        "Defne Demirekler",
+        "Vai Srivastava",
+        "Thanicha Ruangmas"
+    ),
+    bold-author: "Vai Srivastava",
+    title: "The Efficacy of Electric Vehicles",
+    venue: "UMD Undergraduate Research Day",
+    year: "2024",
+    doi-link: "https://doi.org/10.13016/kvdh-6kr0",
+)
 #exp(
     title: link(
-        "https://github.com/jordan-devhub/lunar-nav-bot",
-    )[Lunar Navigation Bot (Autonomous Systems)],
+        "https://github.com/vaisriv/kaluza-kb",
+    )[Custom Keyboard Design and Manufacturing],
+    date: "Mar. 2021 - Oct. 2022",
     details: [
-        - Simulated and field-tested a planetary rover using Jetson Nano, LiDAR, and YOLOv6 for rock classification.
-        - Used MQTT to coordinate movement commands with a relay station over intermittent mesh networks.
-        - Placed among top finalists in the #link("https://www.hackster.io/entries/space-bots-2023")[*SpaceBot 2023 Challenge*].
-    ],
-)
-
-#exp(
-    title: link(
-        "https://github.com/jordan-devhub/speechsync",
-    )[SpeechSync Streamer (Real-Time Communication)],
-    details: [
-        - Created a voice chat system with on-the-fly transcription and translation via Whisper + MarianMT.
-    ],
-)
-
-#exp(
-    title: link(
-        "https://github.com/jordan-devhub/audio-amp-kit",
-    )[Portable Audio Amplifier Kit (Hardware Design)],
-    details: [
-        - Designed a 7W audio amplifier with integrated thermal shutdown and overcurrent protection.
+        - Designed and built client-customized keyboard cases using AutoCAD and PCB schematics and layout using KiCAD
+        - Developed C-firmware for keyboards and OLED displays
+        - Learned design and manufacturing processes for personal electronics hardware
     ],
 )
 
 // Awards
-= Awards
+= Affiliations/Awards
 #exp(
-    title: "SpaceBot 2023 Finalist",
+    title: "UMD President's Scholarship",
+    date: "Fall 2022 - Present",
     details: [
-        - Received for the #link("https://github.com/jordan-devhub/lunar-nav-bot")[Lunar Navigation Bot] project among 200+ submissions.
+        - University of Maryland Four-Year Merit Scholarship
     ],
 )
-
-// Publications
-// This template uses the `pub` function twice to display two publication entries.
-// The `pub-list` function is more advanced and could be used instead to display a list of publications from a `.bib` or `.yml` file.
-= Publications
-#pub(
-    authors: (
-        "Taylor Chen",
-        "Jordan Michaels",
-        "Emily Zhang",
-    ),
-    bold-author: "Jordan Michaels",
-    title: "Lightweight Neural Pruning for Speech Tasks on Low-Power Devices",
-    venue: "ACM UbiComp",
-    year: "2024",
-    doi-link: "doi.org/10.48550/arXiv.2404.00987",
+#exp(
+    title: "Alpha Lambda Delta Honor Society",
+    date: "Spring 2023 - Present",
+    details: [
+        - University of Maryland Chapter of #link("https://www.nationalald.org/")[National *ΑΛΔ* Honor Society]
+    ],
 )
-
-#pub(
-    authors: (
-        "Jordan Michaels",
-        "Alice Smith",
-    ),
-    bold-author: "Jordan Michaels",
-    title: "Optimizing Edge AI Workflows for Low-Latency Inference",
-    venue: "IEEE Edge Computing",
-    year: "2023",
-    doi-link: "doi.org/10.1109/EDGECOMP.2023.1234567",
-    extra: "Best Paper Award",
+#exp(
+    title: "UMD Clark School of Engineering Dean's List",
+    date: "Fall 2022, Spring 2024",
 )
 
 // Skills
 = Skills
 #skills((
     (
-        "Expertise",
-        (
-            [Edge Computing],
-            [Network Protocols],
-            [Robotics Systems],
-            [FPGA Toolchains],
-            [Embedded Audio],
-            [Multilingual NLP],
-            [System Monitoring],
-            [CI/CD Automation],
-        ),
-    ),
-    (
         "Software",
         (
-            [PyTorch],
-            [TensorFlow Lite],
-            [OpenCV],
-            [KiCad],
-            [Docker],
-            [Kubernetes],
-            [Zephyr RTOS],
-            [Vivado],
-            [gRPC],
-            [Git],
-            [JIRA],
-            [WireShark],
-            [Linux],
+            link("https://www.autodesk.com/products/fusion-360")[Fusion 360],
+            link("https://www.kicad.org")[KiCad],
+            link("https://www.autodesk.com/products/autocad")[AutoCAD],
+            link("https://git-scm.com")[Git],
+            link("https://kernel.org")[Linux],
         ),
     ),
     (
         "Languages",
         (
-            [Python],
-            [C/C++],
-            [Rust],
-            [Bash],
-            [MATLAB],
-            [VHDL],
-            [Verilog],
-            [TypeScript],
+            link("https://www.mathworks.com/products/matlab.html")[MATLAB],
+            link("https://www.latex-project.org")[LaTeX],
+            link("https://www.typst.app")[Typst],
+            link("https://www.python.org")[Python],
+            link("https://www.r-project.org")[R],
+            link("https://julialang.org")[Julia],
+            link("https://www.c-language.org")[C/C++],
+            link("https://www.typescriptlang.org")[TypeScript],
+            link("https://www.rust-lang.org")[Rust],
+            link("https://nixos.org")[Nix],
         ),
     ),
 ))
