@@ -4,14 +4,15 @@
     pkgs,
     ...
 }:
-inputs.typix.lib.${system}.watchTypstProject {
-    typstSource = "src/cover-letter.typ";
+inputs.typix.lib.${system}.buildTypstProjectLocal {
+    src = ../../src;
+    typstSource = "cover-letter.typ";
 
-    # unstable_typstPackages = [
-    #     {
-    #         name = "clickworthy-resume";
-    #         version = "1.0.0";
-    #         hash = "sha256-5xVvySd09HboLCleSQuvjN7+EeLpuJzsrWcMMmVbLS8=";
-    #     }
-    # ];
+    unstable_typstPackages = [
+        {
+            name = "clickworthy-resume";
+            version = "1.0.0";
+            hash = "sha256-5xVvySd09HboLCleSQuvjN7+EeLpuJzsrWcMMmVbLS8=";
+        }
+    ];
 }
