@@ -56,7 +56,7 @@
 = Experience
 #exp(
     title: "Undergraduate Researcher",
-    organization: "UMD Department of Aerospace: Space Power and Propulsion Lab",
+    organization: "UMD Department of Aerospace: " + link("https://sppl.umd.edu")[Space Power and Propulsion Lab],
     date: "Jan. 2025 - May 2025",
     location: "College Park, MD",
     details: [
@@ -67,7 +67,7 @@
 )
 #exp(
     title: "AEROS Scholar & Undergraduate Researcher",
-    organization: "UMD Department of Aerospace: Computational Fluid Dynamics Lab",
+    organization: "UMD Department of Aerospace: " + link("http://www.agrc.umd.edu")[Alfred Gessow Rotorcraft Center],
     date: "Jun. 2024 - Dec. 2024",
     location: "College Park, MD",
     details: [
@@ -78,7 +78,7 @@
 )
 #exp(
     title: "Team KIWI Project Co-Lead",
-    organization: "UMD Nearspace: Balloon Payload Program",
+    organization: "UMD Department of Aerospace: " + link("https://bpp.umd.edu")[Nearspace - Balloon Payload Program],
     date: "Sep. 2022 - Jan. 2024",
     location: "College Park, MD",
     details: [
@@ -89,7 +89,7 @@
 )
 #exp(
     title: "Undergraduate Researcher",
-    organization: "UMD Department of Agricultural & Resource Economics - " + link("https://www.fire.umd.edu/sa")[FIRE: Sustainability Analytics],
+    organization: "UMD Department of Agricultural & Resource Economics: " + link("https://www.fire.umd.edu/sa")[FIRE - Sustainability Analytics],
     date: "Jun. 2024 - Dec. 2024",
     location: "College Park, MD",
     details: [
@@ -98,20 +98,11 @@
     ],
 )
 
-// Projects and Publications (Pubs can be included using a .bib file)
+// Projects and Publications
 = Projects/Publications
-#pub(
-    authors: (
-        "William Ratnavale",
-        "Defne Demirekler",
-        "Vai Srivastava",
-        "Thanicha Ruangmas"
-    ),
-    bold-author: "Vai Srivastava",
-    title: "The Efficacy of Electric Vehicles",
-    venue: "UMD Undergraduate Research Day",
-    year: "2024",
-    doi-link: "https://doi.org/10.13016/kvdh-6kr0",
+#pub-list(
+    bib: bibliography("./publications.yml"),
+    style: "ieee"
 )
 #exp(
     title: link(
@@ -138,7 +129,7 @@
     title: "Alpha Lambda Delta Honor Society",
     date: "Spring 2023 - Present",
     details: [
-        - University of Maryland Chapter of #link("https://www.nationalald.org/")[National *ΑΛΔ* Honor Society]
+        - University of Maryland Chapter of National *ΑΛΔ* Honor Society
     ],
 )
 #exp(

@@ -1,0 +1,22 @@
+epaURD2024:
+  type: misc
+  title: The Efficacy of Electric Vehicles
+  author:
+    - William Ratnavale
+    - Defne Demirekler
+    - Vai Srivastava
+  date: 2024-04-16
+  abstract: As a part of the Biden Administration’s Investing in America agenda, the administration is targeting that at least fifty percent of new car sales will be electric by 2030. Using emissions data from 2010 to 2019, Holland et al. (2022) highlighted concerns that the increased electricity production to meet this additional demand could lead to an increase in marginal emissions, offsetting the environmental benefits predicted by the Biden Administration. Our research builds upon their findings by utilizing updated emissions data from the Environmental Protection Agency’s Clean Air Markets Division and hourly electricity generation from the Energy Information Administration from 2020 to 2022 to study how the marginal emissions for electric vehicles have changed in recent years compared to gasoline vehicles. By focusing on this timeframe, our study updates the existing literature on electric vehicle emissions and serves as a benchmark for future policy analysis since this time frame predates the rapid expansion in electric vehicle production and sales into the future.
+  genre: Undergraduate Research Day Presentation
+  affiliated:
+    # - role: advisor
+    - role: director
+      names: Thanicha Ruangmas
+  publisher:
+    name: University of Maryland
+    location: College Park, MD
+  organization: "University of Maryland: Department of Agricultural & Resource Economics"
+  language: en
+  serial-number:
+    doi: 10.13016/kvdh-6kr0
+    uri: https://drum.lib.umd.edu/handle/1903/32474
