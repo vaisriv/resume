@@ -1,7 +1,6 @@
 {
     inputs,
     system,
-    pkgs,
     ...
 }:
 inputs.typix.lib.${system}.buildTypstProjectLocal {
