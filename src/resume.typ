@@ -9,7 +9,9 @@
     [#link("mailto:" + email)[#email]],
     [#link("https://" + github)[#github]],
     [#link("https://" + linkedin)[#linkedin]],
-    [#link("https://www.openstreetmap.org/relation/133393")[College Park, MD 20740]],
+    [#link(
+            "https://www.openstreetmap.org/relation/133393",
+        )[College Park, MD 20740]],
 )
 
 // Professional Summary
@@ -18,7 +20,7 @@
 // Resume configuration
 #let theme = rgb("#26428b")
 #let font = "New Computer Modern"
-#let fontSize = 10pt
+#let fontSize = 9pt
 #let lang = "en"
 #let margin = (
     top: 1cm,
@@ -49,37 +51,61 @@
         ("B.S.", "Aerospace Engineering - Space Track"),
     ),
     // gpa: "3.29",
-    extra: "Coursework: Fluid/Gas/Thermodynamics, Control Systems, Systems Reliability",
+    extra: "Coursework: Fluid/Gas/Thermo Dynamics, Control Systems, Systems Reliability",
 )
 
 // Experience
 = Experience
 #exp(
+    title: "Software Engineering Intern",
+    organization: link("https://www.citedrive.com")[CiteDrive Inc.],
+    date: "Jun. 2025 - Sep. 2025",
+    location: "Columbus, Ohio & Düsseldorf, Germany (Remote)",
+    details: [
+        - Designed, implemented, and delivered several new features for—as well as a complete rewrite of—BibTeX Studio (CiteDrive's document editor, a key application component), delivering significant upgrades to user-experience
+        - Developed and published an Open Source Software package, #link("https://www.npmjs.com/package/@citedrive/codemirror-lang-bibtex")[`@citedrive/codemirror-lang-bibtex`], to provide BibTeX language support for the #link("https://codemirror.net")[CodeMirror Editor] platform
+    ],
+)
+#exp(
     title: "Undergraduate Researcher",
-    organization: "UMD Department of Aerospace: " + link("https://sppl.umd.edu")[Space Power and Propulsion Lab],
+    organization: "UMD Department of Aerospace: "
+        + link("https://sppl.umd.edu")[Space Power and Propulsion Lab],
     date: "Jan. 2025 - May 2025",
     location: "College Park, MD",
     details: [
-        - Designing and building a prototype magnetic nozzle for UMD's direct-drive fusion and space propulsion research
-        - Iterating on current helium-based physics model to optimize magnetic nozzle efficiency
-        - Planning a testing suite to measure viability of magnetic nozzle prototype in space exploration applications
+        - Designed a prototype magnetic nozzle for UMD's direct-drive fusion and space propulsion research
+        - Iterated on current helium-based physics model to optimize magnetic nozzle efficiency
+        - Planned a testing suite to measure viability of magnetic nozzle prototype in space exploration applications
     ],
 )
 #exp(
     title: "AEROS Scholar & Undergraduate Researcher",
-    organization: "UMD Department of Aerospace: " + link("http://www.agrc.umd.edu")[Alfred Gessow Rotorcraft Center],
+    organization: "UMD Department of Aerospace: "
+        + link("http://www.agrc.umd.edu")[Alfred Gessow Rotorcraft Center],
     date: "Jun. 2024 - Dec. 2024",
     location: "College Park, MD",
     details: [
         - Optimized Computational Fluid Dynamics Simulation software to better leverage GPU technology in UMD's High Performance Computing Clusters
-        - Collaborated with my research group on Computational Fluid Dynamics Simulations utilizing various flow models to improve aerodynamic geometries
+        - Collaborated with my research group on Computational Fluid Dynamics Simulations, utilizing various flow models to improve aerodynamic geometries
         - Documented codebase to streamline onboarding of future researchers
     ],
 )
 #exp(
+    title: "Undergraduate Researcher",
+    organization: "UMD Department of Agricultural & Resource Economics: "
+        + link("https://www.fire.umd.edu/sa")[FIRE - Sustainability Analytics],
+    date: "Jan. 2023 - May 2024",
+    location: "College Park, MD",
+    details: [
+        - Conducted research as part of a multi-year project focusing on electric grids and carbon emissions
+        - Analyzed and modeled multiple US Energy Information Administration and US Environmental Protection Agency datasets, using R and Python
+    ],
+)
+#exp(
     title: "Team KIWI Project Co-Lead",
-    organization: "UMD Department of Aerospace: " + link("https://bpp.umd.edu")[Nearspace - Balloon Payload Program],
-    date: "Sep. 2022 - Jan. 2024",
+    organization: "UMD Department of Aerospace: "
+        + link("https://bpp.umd.edu")[Nearspace - Balloon Payload Program],
+    date: "Sep. 2022 - Dec. 2022",
     location: "College Park, MD",
     details: [
         - Led the design for a proof-of-concept for an energy recovery system for near-space ascension scientific payloads
@@ -87,22 +113,12 @@
         - Participated in multiple launch operations for data collection and experimentation
     ],
 )
-#exp(
-    title: "Undergraduate Researcher",
-    organization: "UMD Department of Agricultural & Resource Economics: " + link("https://www.fire.umd.edu/sa")[FIRE - Sustainability Analytics],
-    date: "Jun. 2024 - Dec. 2024",
-    location: "College Park, MD",
-    details: [
-        - Conducted research as part of a multi-year project focusing on electric grids and carbon emissions
-        - Analyzed and modeled multiple US Energy Information Administration and US Environmental Protection Agency datasets using R and Python
-    ],
-)
 
 // Projects and Publications
 = Projects/Publications
 #pub-list(
     bib: bibliography("./publications.yml"),
-    style: "ieee"
+    style: "ieee",
 )
 #exp(
     title: link(
