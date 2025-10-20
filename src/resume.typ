@@ -167,7 +167,7 @@
         ),
     ),
     (
-        "Languages",
+        "Programming Languages",
         (
             link("https://www.mathworks.com/products/matlab.html")[MATLAB],
             link("https://www.latex-project.org")[LaTeX],
