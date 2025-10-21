@@ -115,7 +115,7 @@
 )
 
 // Projects and Publications
-= Projects/Publications
+= Projects & Publications
 #pub-list(
     bib: bibliography("./publications.yml"),
     style: "ieee",
@@ -130,10 +130,18 @@
         - Developed C-firmware for keyboards and OLED displays
         - Learned design and manufacturing processes for personal electronics hardware
     ],
+    hide: true,
 )
 
 // Awards
-= Affiliations/Awards
+= Awards & Certifications
+#exp(
+    title: "FreeFlyer Level 1 Certification",
+    date: "Apr. 2025",
+    details: [
+        - Level 1 Certification in #link("https://ai-solutions.com")[a.i. solutions]'s FreeFlyer Astrodynamics software
+    ],
+)
 #exp(
     title: "UMD President's Scholarship",
     date: "Fall 2022 - Present",
@@ -159,6 +167,7 @@
     (
         "Software",
         (
+            link("https://www.ai-solutions.com/freeflyer")[FreeFlyer],
             link("https://www.autodesk.com/products/fusion-360")[Fusion 360],
             link("https://www.kicad.org")[KiCad],
             link("https://www.autodesk.com/products/autocad")[AutoCAD],
