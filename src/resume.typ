@@ -15,7 +15,7 @@
 )
 
 // Professional Summary
-#let summary = "Highly motivated Aerospace undergraduate researcher at UMD, specializing in high-performance computing and innovative propulsion systems. Proven expertise in MATLAB, Python, R, C++ to optimize simulations and designs, demonstrating strong analytical skills, and excellent communication."
+#let summary = "Highly motivated Aerospace Engineer, specializing in high-performance computing and innovative software systems. Proven expertise in MATLAB, Python, R, C++ to optimize simulations and designs, demonstrating strong analytical skills, and excellent communication."
 
 // Resume configuration
 #let theme = rgb("#26428b")
@@ -45,13 +45,13 @@
 = Education
 #edu(
     institution: "University of Maryland",
-    date: "May 2026 (Expected)",
+    date: "May 2026",
     location: "College Park, MD",
     degrees: (
         ("B.S.", "Aerospace Engineering - Space Track"),
     ),
-    // gpa: "3.29",
-    extra: "Coursework: Fluid/Gas/Thermo Dynamics, Control Systems, Systems Reliability",
+    // gpa: "3.35",
+    extra: "Coursework: Flight/Autonomous Software, Control Systems, Systems Reliability",
 )
 
 // Experience
@@ -139,7 +139,7 @@
     title: "FreeFlyer Level 1 Certification",
     date: "Apr. 2025",
     details: [
-        - Level 1 Certification in #link("https://ai-solutions.com")[a.i. solutions]'s FreeFlyer Astrodynamics software
+        - Level 1 Certification in #link("https://ai-solutions.com")[a.i. solutions]' FreeFlyer Astrodynamics software
     ],
 )
 #exp(
@@ -158,7 +158,7 @@
 )
 #exp(
     title: "UMD Clark School of Engineering Dean's List",
-    date: "Fall 2022, Spring 2024",
+    date: "Fall 2022, Spring 2024, Spring 2026",
 )
 
 // Skills
