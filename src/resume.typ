@@ -144,14 +144,14 @@
 )
 #exp(
     title: "UMD President's Scholarship",
-    date: "Fall 2022 - Present",
+    date: "Fall 2022 - Spring 2026",
     details: [
         - University of Maryland Four-Year Merit Scholarship
     ],
 )
 #exp(
     title: "Alpha Lambda Delta Honor Society",
-    date: "Spring 2023 - Present",
+    date: "Spring 2023 - Spring 2026",
     details: [
         - University of Maryland Chapter of National *ΑΛΔ* Honor Society
     ],
