@@ -2,7 +2,7 @@
 
 // Personal Information
 #let name = "Vai Srivastava"
-#let email = "vai.sriv@icloud.com"
+#let email = "vaisriv@icloud.com"
 #let github = "github.com/vaisriv"
 #let linkedin = "linkedin.com/in/vaisriv"
 #let contacts = (
@@ -23,7 +23,7 @@
 #let fontSize = 9pt
 #let lang = "en"
 #let margin = (
-    top: 1cm,
+    top: 0.75cm,
     bottom: 0cm,
     left: 1cm,
     right: 1cm,
@@ -50,12 +50,34 @@
     degrees: (
         ("B.S.", "Aerospace Engineering - Space Track"),
     ),
-    // gpa: "3.35",
+    gpa: "3.35",
     extra: "Coursework: Flight/Autonomous Software, Control Systems, Systems Reliability",
+)
+#edu(
+    institution: "University of Maryland",
+    date: "May 2028 (Expected)",
+    location: "College Park, MD",
+    degrees: (
+        ("M.Eng.", "Aerospace Engineering"),
+    ),
+    gpa: "4.00",
+    extra: "Coursework: Guidance Navigation & Control, Algorithms & Motion Planning, Linear Controls",
 )
 
 // Experience
 = Experience
+#exp(
+    title: "Graduate Teaching Assistant",
+    organization: link("https://aero.umd.edu")[UMD Department of Aerospace],
+    date: "Aug. 2026 - Present",
+    // date: "Aug. 2026 - Dec. 2026",
+    location: "College Park, MD",
+    details: [
+        - Grade assignments and exams to assess student understanding of course material
+        - Hold office hours and respond to class forum questions, explaining course concepts and guiding students through homework problems
+        - Manage student requests on behalf of the professor, documenting excused absences and approving assignment extensions
+    ],
+)
 #exp(
     title: "Software Engineering Intern",
     organization: link("https://www.citedrive.com")[CiteDrive Inc.],
@@ -112,6 +134,7 @@
         - Contributed to various launch processes including balloon tracking, payload tie-on, and management
         - Participated in multiple launch operations for data collection and experimentation
     ],
+    hide: true,
 )
 
 // Projects and Publications
@@ -158,7 +181,7 @@
 )
 #exp(
     title: "UMD Clark School of Engineering Dean's List",
-    date: "Fall 2022, Spring 2024, Spring 2026",
+    date: "Fall 2022, Spring 2024, Fall 2025, Spring 2026",
 )
 
 // Skills
