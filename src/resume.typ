@@ -10,8 +10,8 @@
     [#link("https://" + github)[#github]],
     [#link("https://" + linkedin)[#linkedin]],
     [#link(
-            "https://www.openstreetmap.org/relation/133393",
-        )[College Park, MD 20740]],
+        "https://www.openstreetmap.org/relation/133393",
+    )[College Park, MD 20740]],
 )
 
 // Professional Summary

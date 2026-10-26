@@ -1,2 +1,1 @@
-{perSystem, ...}:
-perSystem.self.resume
+{ perSystem, ... }: perSystem.self.resume
