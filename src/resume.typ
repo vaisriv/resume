@@ -61,7 +61,7 @@
         ("M.Eng.", "Aerospace Engineering"),
     ),
     gpa: "4.00",
-    extra: "Coursework: Guidance Navigation & Control, Algorithms & Motion Planning, Linear Controls",
+    extra: "Coursework: Guidance Navigation & Control, Astrodynamics, Algorithms & Motion Planning",
 )
 
 // Experience
